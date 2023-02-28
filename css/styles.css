@@ -1,12 +1,14 @@
 :root {
     --title-text-color: #2E2F42;
     --accent-color:#4D5AE5;
+    --white-color:#ffffff;
+    --text-color:#434455;
 }
 body {
     font-family: 'Roboto', sans-serif;
-    color: #434455;
-    letter-spacing: 0.02em;
-    background-color: #ffffff;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    font-size: 16px;
 }
 .list {
     list-style: none;
@@ -26,35 +28,30 @@ body {
 .logo-span {
  color: var(--accent-color);
 }
-.logo:hover,
-.logo:focus {
-    color: var(--accent-color);
-}
 /* разметка навигации сайта */
-.list .link{
+.nav-link{
     color: var(--title-text-color);
     text-decoration: none; 
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
-.list .link:hover,
-.list .link:focus{
+.nav-link:hover,
+.nav-link:focus{
     color: var(--accent-color);
 }
-.list .link.current {
+.nav-link.current {
     color: var(--accent-color);
 }
-.contacts .link {
-color: #434455;
+.contact-link {
+color: var(--text-color);
 font-style: normal;
 text-decoration: none;
-font-weight: 400;
-font-size: 16px;
 line-height: 1.5;
+letter-spacing: 0.02em;
 }
-.contacts .link:hover,
-.contacts .link:focus {
+.contact-link:hover,
+.contacts-link:focus {
     color: var(--accent-color);
 }
 /*  */
@@ -62,14 +59,14 @@ line-height: 1.5;
     background-color: var(--title-text-color);
 }
 .hero-title{
-    color: #ffffff;
-    font-weight: 700;
+    color: var(--white-color);
     font-size: 56px;
+    letter-spacing: 0.02;
     line-height: 1.07;
     text-align: center;
 }
 .button{
-    color: #ffffff;
+    color: var(--white-color);
     background-color: var(--accent-color);
 }
 .button:hover,
@@ -95,19 +92,18 @@ line-height: 1.5;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 20px;
+    letter-spacing: 0.02em;
     line-height: 1.2;
-    text-transform: capitalize;
 }
 .subtitle-text{
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
-    color: #434455;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
 }
-.headline{
-    color: var(--title-text-color);
-    font-weight: 700;
+.section-title {
+    color: var(--title-text-color); 
     font-size: 36px;
+    letter-spacing: 0.02em;
     line-height: 1.11;
     text-transform: capitalize;
 }
@@ -127,9 +123,8 @@ line-height: 1.5;
 }
 .text-footer{
     color: #E7E9FC;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 /* портфолио кнопки */
 .list-button{
@@ -139,7 +134,7 @@ color: var(--accent-color);
 .list-button:hover,
 .list-button:focus{
     background-color: #404BBF;
-    color:#FFFFFF ;
+    color:var(--white-color) ;
 }
 
 .list .item{
